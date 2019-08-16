@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+body, input, button{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.zallpy-container{ 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zallpy-container .panel{
+  padding: 50px;
+  border-color: #ddd;
+  color: #333333;
+  background-color: #fff;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  width: 400px;
+}
+
+.zallpy-container .panel{
+  padding: 50px 30px;
+  border-color: #ddd;
+  color: #333333;
+  background-color: #fff;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  width: 400px;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.zallpy-container .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.zallpy-container .content img {
+  width: 200px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.zallpy-container .content button {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  height: 40px;
+  font-size: 16px;
+  background: #1b9b38;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.zallpy-container .content a {
+  color: #fff;
+}
+
+.zallpy-container .proposal {
+  width:600px;
+}

@@ -1,0 +1,42 @@
+<div class="zallpy-container">
+    <div class="panel">
+        <div class="content">
+            <form name="clientForm">
+                <div class="form-group">
+                    <input type="text" class="form-control  form-control-sm" ng-model="cliente.nome" placeholder="Nome" required >
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control  form-control-sm"  ng-model="cliente.cpf" placeholder="CPF" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control  form-control-sm"  ng-model="cliente.idade" placeholder="Idade" required>
+                </div>
+                <div class="form-group">
+                    <select class="form-control form-control-sm"  ng-options="genero.key as genero.value for genero in generos" ng-model="cliente.genero" required>
+                        <option value="" ng-show="!cliente.genero">Sexo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control  form-control-sm" ng-options="estadoCivil.key as estadoCivil.value for estadoCivil in estadosCivis" ng-model="cliente.estadoCivil" required>
+                        <option value="" ng-show="!cliente.estadoCivil">Estado Civil</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control  form-control-sm" ng-options="estado.key as estado.value for estado in estados" ng-model="cliente.estado" required>
+                        <option value="" ng-show="!cliente.estado">Estado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control  form-control-sm"   ng-model="cliente.dependentes" placeholder="Dependentes" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control  form-control-sm"  ng-model="cliente.renda"  placeholder="Renda" required>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" ng-click="clientForm.$valid && saveClient()">Enviar Proposta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
