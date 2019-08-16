@@ -52,4 +52,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('dev',  ['sass', 'compress-dev' , 'watch']);
-gulp.task('build', ['sass', 'compress-prod']);
+gulp.task('build', ['sass', 'compress-dev']);
